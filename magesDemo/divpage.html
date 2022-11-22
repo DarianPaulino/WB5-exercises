@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body>
+    
+    <div class="imageGroup">
+        <img src="image1.webp" />
+        <p>describe images above</p>
+    </div>
+
+    <div class="imageGroup">
+        <img src="image2.webp" />
+        <p>describe images above</p>
+    </div>
+
+
+    <div class="imageGroup">
+        <img src="image3.webp" />
+        <p>describe images above</p>
+    </div>
+    <img src="image4.jpg">
+
+    <script>
+
+        window.onload = function(){
+            let img = document.getElementsByClassName("imageGroup")
+            let imglenght = img.lenght;
+            for (let i = 0; i < imglenght; i++) {
+            imageDiv[i].style.border = "5px solid red"; 
+        }
+            
+            let findGraffitiImg = document.querySelectorall("img:not{(alt)}")
+            findGraffitiImg.forEach(setAlt => {
+                setAlt.setAttribute("alt", "grafitti image")
+            })
+
+        }
+    </script>
+
+
+</body>
+</html>
